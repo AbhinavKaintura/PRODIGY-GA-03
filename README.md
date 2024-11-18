@@ -1,4 +1,4 @@
-# Smart Text Editor with AI-Powered Word Predictions
+# WordWizard
 
 A modern, responsive text editor with real-time word predictions powered by GPT-2. This project combines a React frontend with a Flask backend to create an intelligent writing assistant that suggests words as you type.
 
