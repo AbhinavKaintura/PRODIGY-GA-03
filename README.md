@@ -1,104 +1,70 @@
-# Smart Text Editor with AI-Powered Word Predictions
+# Getting Started with Create React App
 
-A modern, responsive text editor with real-time word predictions powered by GPT-2. This project combines a React frontend with a Flask backend to create an intelligent writing assistant that suggests words as you type.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🌟 Features
+## Available Scripts
 
-* Real-time word predictions using GPT-2  
-* Modern, responsive UI with light/dark theme support  
-* Keyboard navigation for predictions (Tab to cycle, Enter to select)  
-* Debounced API calls for better performance  
-* Clean, minimalist design with smooth animations  
-* Visual typing indicators and loading states
+In the project directory, you can run:
 
-  ![TextPred](https://github.com/user-attachments/assets/2fe80f4a-38ac-4d8e-aff4-75ac2024cd74)
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🛠️ Technologies Used
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Frontend
-* **React.js** for UI components  
-* **Lucide React** for icons  
-* **Custom CSS-in-JS styling**  
-* **Real-time state management** with React hooks  
+### `npm test`
 
-### Backend
-* **Flask** for the REST API  
-* **PyTorch** for machine learning operations  
-* **Hugging Face Transformers** for GPT-2 integration  
-* **CORS** support for cross-origin requests  
-* **NumPy** for numerical operations  
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🚀 Getting Started
+### `npm run build`
 
-### Prerequisites
-* Python 3.8 or higher  
-* Node.js 14.0 or higher  
-* npm or yarn package manager  
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Installation
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/AbhinavKaintura/PRODIGY-GA-03.git
-   cd smart-text-editor
-2. **Set up the backend:**
-   ```bash
-   # Create and activate a virtual environment (recommended)
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    
-    # Install Python dependencies
-    pip install -r requirements.txt
-    
-    # Start the Flask server
-    python backend.py
-3. **Set up the frontend:**
-   ```bash
-      # Install dependencies
-      npm install
-      
-      # Start the development server
-      npm start
-4. Open your browser and navigate to http://localhost:3000
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-   ## 💭 Challenges Faced and Solutions
+### `npm run eject`
 
-### 1. Performance Optimization
-* **Challenge:** Initial API calls were being made for every keystroke, causing performance issues.  
-* **Solution:**  
-  - Implemented debouncing with `useEffect` and `setTimeout` to limit API calls to once every 300ms after the user stops typing.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### 2. Prediction Quality
-* **Challenge:** Raw GPT-2 predictions included special tokens and irrelevant suggestions.  
-* **Solution:**  
-  - Implemented custom cleaning functions to remove special tokens.  
-  - Added filters for minimum word length and alphanumeric content.  
-  - Applied temperature scaling for better prediction diversity.  
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 3. UI/UX Considerations
-* **Challenge:** Needed a smooth, intuitive interface for prediction selection.  
-* **Solution:**  
-  - Added keyboard navigation (Tab/Enter).  
-  - Implemented visual indicators for typing and loading states.  
-  - Created smooth transitions between themes and states.  
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 4. Model Loading Time
-* **Challenge:** Initial loading of GPT-2 model was causing slow startup times.  
-* **Solution:**  
-  - Implemented lazy loading for the model.  
-  - Added error handling and graceful fallbacks.  
-  - Used model caching to improve subsequent load times.  
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
----
+## Learn More
 
-## 🔧 Configuration
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-The application can be configured through environment variables:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```env
-FLASK_ENV=development
-PORT=5000
-MODEL_NAME=gpt2  # Can be changed to other GPT-2 variants
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
