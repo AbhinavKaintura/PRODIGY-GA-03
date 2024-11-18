@@ -40,7 +40,7 @@ A modern, responsive text editor with real-time word predictions powered by GPT-
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/AbhinavKaintura/PRODIGY-GA-03.git
-   cd smart-text-editor
+   cd PRODIGY-GA-03
 2. **Set up the backend:**
    ```bash
    # Create and activate a virtual environment (recommended)
@@ -51,6 +51,7 @@ A modern, responsive text editor with real-time word predictions powered by GPT-
     pip install -r requirements.txt
     
     # Start the Flask server
+    cd src/
     python backend.py
 3. **Set up the frontend:**
    ```bash
@@ -58,6 +59,7 @@ A modern, responsive text editor with real-time word predictions powered by GPT-
       npm install
       
       # Start the development server
+      cd src/
       npm start
 4. Open your browser and navigate to http://localhost:3000
 
